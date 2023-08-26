@@ -1,0 +1,92 @@
+:root {
+    --Header-footer-font: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
+    --Body-font: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
+}
+
+@media (max-width: 600px) {
+    body {
+      font-size: small;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    body {
+      font-size: smaller;
+    }
+  }
+  
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--Body-font);
+    background-color: gray;
+}
+
+.header {
+    font-family: var(--Header-footer-font);
+    background: #13293d;
+    color: #fff;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.header.img {
+
+}
+
+.header h1 {
+    flex-basis: 40%;
+    flex-wrap: wrap;
+    align-self: center;
+
+}
+
+.header nav {
+    flex-basis: 40%;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    justify-content: space-between;
+    
+
+}
+
+.header nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: large;
+
+    
+     
+}
+.header nav ul a {
+    color: inherit;
+    text-decoration: inherit;
+    border-bottom: 1px solid;
+    padding-bottom: 1px;
+    
+    
+}
+.header nav ul li {
+    margin: 5px 20px;
+
+
+}
+
+#recent-photo {
+    /* flex-basis: 10%; */
+    max-width: 100px;
+    min-width: 10px;
+    flex-shrink: 1;
+
+
+    
+}
