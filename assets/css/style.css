@@ -3,18 +3,30 @@
     --Body-font: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
 }
 
-@media (max-width: 600px) {
+@media screen {
     body {
-      font-size: small;
+        margin-left: 13%;
+        margin-right: 13%;
     }
-  }
-  
-  @media (max-width: 400px) {
+}
+
+@media screen and (max-width: 650px) {
     body {
-      font-size: smaller;
+        margin-left: 0px;
+        margin-right: 0px;
     }
-  }
-  
+}
+@media screen and (max-width: 560px) {
+    * {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    * {
+        font-size: x-small;
+    }
+}
 
 * {
     box-sizing: border-box;
@@ -25,68 +37,79 @@
 body {
     font-family: var(--Body-font);
     background-color: gray;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .header {
     font-family: var(--Header-footer-font);
-    background: #13293d;
+    background-color: #13293d;
     color: #fff;
     padding: 1%;
     display: flex;
     flex-wrap: wrap;
-    
+    margin: 2%;
+    min-height: 5vh;
 }
 
 .header.img {
-
 }
 
 .header h1 {
-    flex-basis: 40%;
-    flex-wrap: wrap;
+    flex-basis: 50%;
     align-self: center;
-
+    margin-left: 15px;
 }
 
 .header nav {
-    flex-basis: 40%;
+    flex-basis: 100%;
     flex-wrap: wrap;
     align-self: flex-end;
-    justify-content: space-between;
-    
-
 }
 
 .header nav ul {
     list-style-type: none;
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: right;
     font-size: large;
-
-    
-     
 }
 .header nav ul a {
     color: inherit;
     text-decoration: inherit;
     border-bottom: 1px solid;
     padding-bottom: 1px;
-    
-    
 }
 .header nav ul li {
-    margin: 5px 20px;
-
-
+    margin: 0px 5px;
 }
 
 #recent-photo {
-    /* flex-basis: 10%; */
-    max-width: 100px;
+    flex-basis: 150px;
     min-width: 10px;
     flex-shrink: 1;
+}
 
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    background-color: #fcfcfc;
+    padding: 5%;
+    margin: 0% 2% 0% 2%;
+}
 
-    
+.footer {
+    font-family: var(--Header-footer-font);
+    display: flex;
+    background-color: #13293d;
+    color: #fff;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    background: #13293d;
+    min-height: 5vh;
 }
