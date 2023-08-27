@@ -113,3 +113,11 @@ body {
     background: #13293d;
     min-height: 5vh;
 }
+
+.article {
+    flex:auto;
+}
+
+.article h2 {
+    font-style: italic;
+}
