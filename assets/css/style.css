@@ -159,34 +159,32 @@ h2 {
     white-space: nowrap;
     padding: 2%;
     margin-right: 2%;
-    flex-basis: 300px;
-    flex: 1 1 auto;
 }
 
 h2::before,
 h2::after {
     display: flex;
-    content: "";
+    /* content: "";
     position: absolute;
     border-style: solid;
     border-color: yellow;
-    border-width: 0 2px 2px 0;
+    border-width: 0 2px 2px 0; */
 }
 
 h2:before {
-    top: 50%;
+    /* top: 50%;
     left: -10%;
     width: 10%;
     height: 50%;
-    transform: rotate(90deg) translateY(-50%);
+    transform: rotate(90deg) translateY(-50%); */
 }
 
 h2:after {
-    bottom: 50%;
+    /* bottom: 50%;
     right: -10%;
     width: 10%;
     height: 50%;
-    transform: rotate(-90deg) translateY(-50%);
+    transform: rotate(-90deg) translateY(-50%); */
 }
 article p {
     /* margin: 5%; */
