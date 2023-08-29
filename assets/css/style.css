@@ -7,7 +7,7 @@
     body {
         margin-left: 13%;
         margin-right: 13%;
-        font-size: /* TODO:add font size*/;
+        font-size: /* TODO:add font size*/ ;
     }
 }
 
@@ -20,7 +20,7 @@
 body {
     font-family: var(--Body-font);
     background-color: gray;
-    font-size: /* TODO: */;
+    font-size: /* TODO: */ ;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -37,9 +37,6 @@ body {
     flex-wrap: wrap;
     margin: 2%;
     min-height: 5vh;
-}
-
-.header.img {
 }
 
 .header h1 {
@@ -74,7 +71,7 @@ body {
 #recent-photo {
     flex-basis: 150px;
     min-width: 10px;
-    flex-shrink: 1;
+    flex-shrink: 1; /* TODO: */
 }
 
 .main {
@@ -101,33 +98,34 @@ body {
     min-height: 5vh;
 }
 
-.article {
+.about-me-card {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
-.article2 {
+.about-me-card p {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+
+.current-projects-card {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.article-title {
+
+.About-me-card h2,
+.current-projects-card h2 {
     display: flex;
     font-style: italic;
     align-items: center;
 }
-.article-p {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center;
-    flex-basis: 100%; */
-    margin: 5%;
-}
 
-.article-img1 {
+.large-image-card {
     display: flex;
     min-width: 60%;
     align-items: center;
@@ -135,7 +133,7 @@ body {
     justify-content: center;
     position: relative;
 }
-.article-img1 p {
+.large-image-card p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,7 +149,7 @@ body {
     background-color: #13293db6;
 }
 
-.article-img {
+.image-card {
     display: flex;
     min-width: 20%;
     align-items: center;
@@ -166,16 +164,16 @@ body {
     align-items: center;
 }
 
-.contact-me-title {
+.contact-me h2 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
-.contact-me-content {
+/* .contact-me-content {
     display: flex;
     flex-direction: column;
-}
+} */
 
 h2 {
     display: flex;
@@ -219,18 +217,18 @@ h2:after {
 }
 @media screen and (max-width: 560px) {
     * {
-        font-size: medium;
+        font-size: medium; /* TODO:  */
     }
     .article-img1 p {
-        font-size: x-large;
+        font-size: x-large; /* TODO: */
     }
 }
 
 @media screen and (max-width: 380px) {
     * {
-        font-size: small;
+        font-size: small; /* TODO: */
     }
     .article-img1 p {
-        font-size: medium;
+        font-size: medium; /* TODO: */
     }
 }
