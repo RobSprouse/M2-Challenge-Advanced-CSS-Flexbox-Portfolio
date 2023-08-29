@@ -5,8 +5,7 @@
 
 @media screen {
     body {
-        margin-left: 13%;
-        margin-right: 13%;
+        margin: 5% 20%;
     }
 }
 
@@ -24,7 +23,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-image: url(../images/Testbackground.png);
-    background-size: cover;
+    background-size: 120em;
 }
 
 .header {
@@ -110,13 +109,6 @@ body {
     margin: 5%;
 }
 
-.current-projects-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .About-me-card h2,
 .current-projects-card h2 {
     display: flex;
@@ -124,70 +116,85 @@ body {
     align-items: center;
 }
 
+.current-projects-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .large-image-card,
 .large-image-card a {
     display: flex;
-    flex-basis: 100%;
     min-width: 5%;
     flex: 1 1 auto;
-    /* align-items: center; */
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
 }
+
 .large-image {
     display: flex;
-    flex-basis: 100%;
+    flex-basis: 80%;
     align-self: center;
     padding: 2%;
     justify-content: center;
     min-width: 10%;
 }
+
 .large-image-card p {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 0 1;
     position: absolute;
-    top: 25%;
+    top: 18%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid black;
     border-radius: 10px;
-    padding: 10px;
+    padding: 2em;
     background-color: #13293db6;
+    flex: 0 2;
 }
-.large-image-card,
-.large-image-card a,
-.large-image {
-    max-width: 100%;
-
-}
-
 
 .image-card,
 .image-card a {
-    display: flex;
     min-width: 10%;
     flex: 1 1 auto;
-    align-items: center;
     justify-content: center;
 }
 
 .image-card-projects {
-    display: flex;
-    align-items: center;
     padding: 2%;
     justify-content: space-between;
-    min-width: 10%;
 }
 
+.image-card,
+.image-card a,
+.image-card-projects {
+    display: flex;
+    flex-basis: 80%;
+    align-items: center;
+    position: relative;
+}
+
+.image-card p {
+    display: flex;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0.75em;
+    background-color: #13293db6;
+    flex: 0 2;
+}
 
 .contact-me {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding: 1em 0em;
 }
 
 .contact-me h2 {
@@ -196,10 +203,17 @@ body {
     justify-content: flex-start;
     align-items: center;
 }
-/* .contact-me-content {
+/* TODO: */
+
+.contact-me-card {
     display: flex;
-    flex-direction: column;
-} */
+    flex-direction: reverse;
+    justify-content: center;
+}
+.contact-me-card p {
+    display: flex;
+    padding: 1em;
+}
 
 h2 {
     display: flex;
@@ -216,7 +230,7 @@ h2::after {
     position: absolute;
     border-style: solid;
     border-color: yellow;
-    border-width: 0 2px 2px 0;
+    border-width: 0 0.2em 0.2em 0;
 }
 
 h2:before {
@@ -237,38 +251,40 @@ h2:after {
 
 @media screen and (max-width: 1200px) {
     * {
-        font-size: 1.05em; /* TODO:  */
+        font-size: 1.05em;
+    }
+    body {
+        margin: 5% 15%;
     }
 }
 
 @media screen and (max-width: 1000px) {
     * {
-        font-size: 1.02em; /* TODO:  */
+        font-size: 1.02em;
     }
 }
 
 @media screen and (max-width: 700px) {
     body {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin: 0% 0%;
     }
     * {
-        font-size: 1em; /* TODO:  */
+        font-size: 1em;
     }
 }
 @media screen and (max-width: 560px) {
     * {
-        font-size: 0.98em; /* TODO:  */
+        font-size: 0.98em;
     }
 }
 @media screen and (max-width: 460px) {
     * {
-        font-size: 0.96em; /* TODO:  */
+        font-size: 0.96em;
     }
 }
 
 @media screen and (max-width: 380px) {
     * {
-        font-size: 0.94em; /* TODO: */
+        font-size: 0.94em;
     }
 }
