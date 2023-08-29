@@ -142,17 +142,16 @@ body {
 }
 .large-image-card p {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1 1;
     position: absolute;
-    top: 50%;
+    top: 18%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid black;
     border-radius: 10px;
-    padding: 1em;
+    padding: 2em;
     background-color: #13293db6;
+    flex: 0 2;
+ 
 }
 
 .image-card,
@@ -165,7 +164,7 @@ body {
 .image-card-projects {
     padding: 2%;
     justify-content: space-between;
-    min-width: 10%;
+ 
 }
 
 .image-card,
@@ -174,19 +173,22 @@ body {
     display: flex;
     flex-basis: 80%;
     align-items: center;
-    align-items: center;
     position: relative;
 }
 
 .image-card p {
+    display: flex;
     position: absolute;
-    top: 50%;
+    top: 22%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid black;
     border-radius: 10px;
-    padding: 1em;
+    padding: 0.75em;
     background-color: #13293db6;
+    flex: 0 2;
+ 
+    
 }
 
 .contact-me {
@@ -194,6 +196,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding: 1em 0em;
 }
 
 .contact-me h2 {
@@ -203,10 +206,21 @@ body {
     align-items: center;
 }
 /* TODO: */
-/* .contact-me-content {
+
+.contact-me-card {
     display: flex;
-    flex-direction: column;
-} */
+    flex-direction: reverse;
+    justify-content: center;
+
+}
+.contact-me-card p {
+     display:flex;
+    padding: 1em;
+    
+
+
+}
+
 
 h2 {
     display: flex;
@@ -223,7 +237,7 @@ h2::after {
     position: absolute;
     border-style: solid;
     border-color: yellow;
-    border-width: 0 2px 2px 0;
+    border-width: 0 0.2em .2em 0;
 }
 
 h2:before {
