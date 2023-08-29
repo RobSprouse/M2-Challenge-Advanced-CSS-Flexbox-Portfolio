@@ -7,7 +7,6 @@
     body {
         margin-left: 13%;
         margin-right: 13%;
-        font-size: /* TODO:add font size*/ ;
     }
 }
 
@@ -15,12 +14,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 1.07em /* TODO:add font size*/;
 }
 
 body {
     font-family: var(--Body-font);
     background-color: gray;
-    font-size: /* TODO: */ ;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -49,6 +48,7 @@ body {
     flex-basis: 100%;
     flex-wrap: wrap;
     align-self: flex-end;
+    padding: 2% 0% 2% 0%;
 }
 
 .header nav ul {
@@ -56,7 +56,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: large;
 }
 .header nav ul a {
     color: inherit;
@@ -113,7 +112,7 @@ body {
 
 .current-projects-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -125,13 +124,24 @@ body {
     align-items: center;
 }
 
-.large-image-card {
+.large-image-card,
+.large-image-card a {
     display: flex;
-    min-width: 60%;
+    flex-basis: 100%;
+    min-width: 5%;
+    flex: 1 1 auto;
+    /* align-items: center; */
     align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.large-image {
+    display: flex;
+    flex-basis: 100%;
+    align-self: center;
     padding: 2%;
     justify-content: center;
-    position: relative;
+    min-width: 10%;
 }
 .large-image-card p {
     display: flex;
@@ -142,20 +152,36 @@ body {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: xx-large;
     border: 2px solid black;
     border-radius: 10px;
     padding: 10px;
     background-color: #13293db6;
 }
+.large-image-card,
+.large-image-card a,
+.large-image {
+    max-width: 100%;
 
-.image-card {
+}
+
+
+.image-card,
+.image-card a {
     display: flex;
-    min-width: 20%;
+    min-width: 10%;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-card-projects {
+    display: flex;
     align-items: center;
     padding: 2%;
     justify-content: space-between;
+    min-width: 10%;
 }
+
 
 .contact-me {
     display: flex;
@@ -209,26 +235,40 @@ h2:after {
     transform: rotate(-90deg) translateY(-50%);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1200px) {
+    * {
+        font-size: 1.05em; /* TODO:  */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    * {
+        font-size: 1.02em; /* TODO:  */
+    }
+}
+
+@media screen and (max-width: 700px) {
     body {
         margin-left: 0px;
         margin-right: 0px;
     }
+    * {
+        font-size: 1em; /* TODO:  */
+    }
 }
 @media screen and (max-width: 560px) {
     * {
-        font-size: medium; /* TODO:  */
+        font-size: 0.98em; /* TODO:  */
     }
-    .article-img1 p {
-        font-size: x-large; /* TODO: */
+}
+@media screen and (max-width: 460px) {
+    * {
+        font-size: 0.96em; /* TODO:  */
     }
 }
 
 @media screen and (max-width: 380px) {
     * {
-        font-size: small; /* TODO: */
-    }
-    .article-img1 p {
-        font-size: medium; /* TODO: */
+        font-size: 0.94em; /* TODO: */
     }
 }
