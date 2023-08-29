@@ -7,7 +7,7 @@
     body {
         margin-left: 13%;
         margin-right: 13%;
-        font-size: large;
+        font-size: /* TODO:add font size*/;
     }
 }
 
@@ -20,7 +20,7 @@
 body {
     font-family: var(--Body-font);
     background-color: gray;
-    font-size: medium;
+    font-size: /* TODO: */;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -233,3 +233,4 @@ h2:after {
     .article-img1 p {
         font-size: medium;
     }
+}
