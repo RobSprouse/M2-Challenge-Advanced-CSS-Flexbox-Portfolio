@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- COMMENT:Meta tags/Title -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Portfolio</title>
-    <!-- TODO: add desctiption and keywords -->
-    <meta name=" description" content="">
-    <meta name="keywords" content="" </head>
+    <title>Robert Sprouse's Portfolio</title>
+    <meta name=" description"
+        content="This website is a result of the University of Richmond's Coding Bootcamp Module 2 Challenge, to make a portfolio website.">
+    <meta name="keywords" content="University of Richmond, Robert Sprouse, Portfolio">
+</head>
 
+<!-- COMMENT:Body -->
+<body>
+    <!-- COMMENT:Header -->
     <header class="header">
         <img src="./assets/images/RS 200x200.png" alt="Robert Sprouse" id="recent-photo">
         <h1>
             Robert Sprouse
         </h1>
-
+        <!-- COMMENT:Header Nav -->
         <nav class="navigation">
             <ul>
                 <li>
@@ -30,32 +35,29 @@
                 </li>
             </ul>
         </nav>
-
     </header>
-
+    <!-- COMMENT:Main -->
     <main class="main">
-
-        <article class="about-me-card">
-
+        <!-- COMMENT:About Me Card -->
+        <section class="about-me-card">
             <h2 id="about-me">
                 About Me
             </h2>
             <p>
-                This is a paragraph about me. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus
-                recusandae amet nostrum odit, ut unde non sint, quia sed inventore odio, delectus iure! Eligendi vitae
-                fuga blanditiis accusamus tempore!
+                My name is Robert Sprouse. After seventeen years of experience being a Military Police Officer in the
+                Virginia Army National Guard, one combat tour in Iraq, an Intelligence Officer with the Virginia
+                Department of Corrections, and a Police Officer, I have began taking classes at the University of
+                Richmond's Coding Bootcamp. This website is the result of a Module Challenge to make a portfolio.
             </p>
-
-        </article>
-
-        <article class="current-projects-card">
+        </section>
+        <!-- COMMENT:Current Projects Card and Title -->
+        <section class="current-projects-card">
             <h2 class="current-projects-title" id="current-projects">
                 Current Projects
             </h2>
-        </article>
-
-        <section class="large-image-card">
-
+        </section>
+        <!-- COMMENT:Large image card with <a>, image, and <p> -->
+        <div class="large-image-card">
             <div class="large-image-card">
                 <a href="#">
                     <img src="./assets/images/150x150.png" alt="null" class="large-image">
@@ -64,12 +66,9 @@
                     First Project
                 </p>
             </div>
-
-        </section>
-
-
+        </div>
+        <!-- COMMENT:First Row of smaller projects -->
         <div class="image-card" id="current-projects">
-
             <div class="image-card">
                 <a href="#">
                     <img src="./assets/images/100x100.png" alt="null" class="image-card-projects">
@@ -78,7 +77,6 @@
                     Second Project
                 </p>
             </div>
-
             <div class="image-card">
                 <a href="#">
                     <img src="./assets/images/100x100.png" alt="null" class="image-card-projects">
@@ -87,11 +85,9 @@
                     Third Project
                 </p>
             </div>
-
         </div>
-
+        <!-- COMMENT:2nd Row of smaller projects -->
         <div class="image-card">
-
             <div class="image-card">
                 <a href="#">
                     <img src="./assets/images/100x100.png" alt="null" class="image-card-projects">
@@ -100,7 +96,6 @@
                     Fourth Project
                 </p>
             </div>
-
             <div class="image-card">
                 <a href="#">
                     <img src="./assets/images/100x100.png" alt="null" class="image-card-projects">
@@ -109,43 +104,41 @@
                     Fifth Project
                 </p>
             </div>
-
         </div>
-
-
-        <article class="contact-me" id="contact-me">
+        <!-- COMMENT:Contact Me Header-->
+        <section class="contact-me" id="contact-me">
             <h2>
                 Contact Me
             </h2>
-        </article>
-        <!-- TODO:Contact Me -->
-
+        </section>
+        <!-- COMMENT:Contact Me Section -->
         <div class="contact-me-card">
             <div class="contact-me-card">
-                <p>
-                    Contact Me content
-                </p>
-                <p>
-                    2nd Content
-                </p>
-                <p>
-                    3rd Content
-                </p>
+                <a href="mailto: drgstriker@aol.com" class="contact-me-card">
+                    Email: DrgStriker@aol.com
+                </a>
+                <a href="https://github.com/RobSprouse" class="contact-me-card">
+                    Github: https://github.com/RobSprouse
+                </a>
             </div>
         </div>
-
-
-        <!-- <p>
-            This is a paragraph in the main section.
-        </p> -->
     </main>
-
+    <!-- COMMENT:Footer Section -->
     <footer class="footer">
+        <h3>
+            Developer Notes:
+        </h3>
         <p>
-            This is the footer.
+            This website is a result of the University of Richmond's Coding Bootcamp Module 2 Challenge.
+        </p>
+        <p>
+            In an effort to learn how to make the entire website adjust to any available viewport, I went into the
+            project with the intention to have everything scalable with flex-boxes that have various attributes. A lot
+            of effort went into this project, discovering many ways on how to adjust the html and css code to achieve
+            this goal.
         </p>
     </footer>
 
-    </body>
+</body>
 
 </html>
