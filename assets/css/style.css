@@ -17,6 +17,8 @@
     font-size: 1.05em;
 }
 
+/* TODO: orgainze code */
+
 /* COMMENT:Body */
 body {
     font-family: var(--Body-font);
@@ -74,7 +76,7 @@ body {
     padding-bottom: 1px;
 }
 .header nav ul li {
-    margin: .05em 0.5em;
+    margin: 0.05em 0.5em;
 }
 
 /* COMMENT:Main */
@@ -124,6 +126,7 @@ body {
 }
 
 /* COMMENT:Large image card with <a>, image, and <p> */
+/* TODO:Add Style to linked image */
 .large-image-card,
 .large-image-card a {
     display: flex;
@@ -157,6 +160,7 @@ body {
 }
 
 /* COMMENT:Rows of smaller projects  */
+/* TODO:Add Style to linked image */
 .image-card {
     min-width: 10%;
     flex: 1 1 auto;
@@ -174,7 +178,6 @@ body {
 }
 
 .image-card-projects {
-
 }
 
 .image-card {
@@ -223,7 +226,7 @@ body {
 }
 
 /* COMMENT:Contact Me Content */
-/* TODO: */
+/* TODO: Add style to content*/
 .contact-me-card {
     display: flex;
     flex-basis: 100%;
@@ -242,6 +245,7 @@ body {
 }
 
 /* COMMENT:Footer Section*/
+/* TODO:Add style to develop notes { } */
 .footer {
     font-family: var(--Header-footer-font);
     display: flex;
@@ -256,9 +260,8 @@ body {
 
 .footer h3 {
     display: flex;
+    flex-basis: 100%;
     padding: 2% 0% 0% 2%;
-
-
 }
 
 .footer p {
@@ -266,7 +269,6 @@ body {
     flex-wrap: wrap;
     padding: 2% 5%;
     justify-content: center;
-
 }
 
 /* COMMENT:Unique Styles and requirements for Title Borders */
