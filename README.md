@@ -4,8 +4,8 @@
 
 This Repo was created to complete the University Of Richmond's, Coding Bootcamp, Module 2 Challenge. The challenge was to build a portfolio website from scratch that can be added to as progression is made in the class. The following User Story and Acceptance Criteria was used to achieve the primary objective.
 
-## User Story
-
+>## User Story
+>
 >```
 >AS AN employer
 >I WANT to view a potential employee's deployed portfolio of work samples
