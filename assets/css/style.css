@@ -260,6 +260,7 @@ h2 {
 }
 
 /* COMMENT:Unique Styles and requirements for Title Borders */
+/* COMMENT:Bing.com AI's chat was utilized in providing the code to display the unique border. It did not provide a reference to it's origin. I adjusted it to style it appropiately in my website. */
 h2 {
     display: flex;
     position: relative;
